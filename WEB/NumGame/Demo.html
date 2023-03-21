@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>순서대로 누르기</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="HandheldFriendly" content="true">
+  <script src="https://kit.fontawesome.com/dab690a483.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="Demo.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="title-bar-with-title-and-x-button">
+    <span class="title-text"> 순서대로 누르기 게임 </span>
+  </div>
+  <div class="timer-box">
+    <div id="Drop" class="js-timer element">00:00:00</div>
+
+  </div>
+  <div class="test-box">
+    <table id="button-table">
+      <tr>
+        <td>
+          <div id="1" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img1" class="button" src="img/num (1).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="2" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img2" class="button" src="img/num (2).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="3" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img3" class="button" src="img/num (3).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="4" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img4" class="button" src="img/num (4).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="5" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img5" class="button" src="img/num (5).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="6" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img6" class="button" src="img/num (6).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="7" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img7" class="button" src="img/num (7).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="8" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img8" class="button" src="img/num (8).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="9" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img9" class="button" src="img/num (9).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="10" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img10" class="button" src="img/num (10).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="11" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img11" class="button" src="img/num (11).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="12" class="card" onclick="submit(this.id)">
+            <div class="card-inner">
+              <div class="card-back"><img id="img12" class="button" src="img/num (12).svg"></div>
+              <div class="card-front"><img class="button" src="img/num (back).svg"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  
+  </div>
+
+  <script src="Timer.js"></script>
+  <script src="preload.js"></script>
+  <script src="NpressGame.js"></script>
+  <script src="Demo.js"></script>
+  <script>Playgame(12)</script>
+
+
+  </script>
+
+
+</body>
+
+</html>

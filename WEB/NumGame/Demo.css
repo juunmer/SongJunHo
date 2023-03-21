@@ -1,0 +1,133 @@
+* {padding:0;margin:0;}
+
+:root {
+  --unit-pixel: calc(1vw / 411 * 100);
+}
+
+body {
+  background-image: url('/img/bgimg.jpeg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: #bbb;
+  overflow: hidden;
+  touch-action: pan-x pan-y;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-bar-with-title-and-x-button {
+  margin-top: calc(20 * var(--unit-pixel));
+  margin-bottom: calc(0 * var(--unit-pixel));
+  text-align: center;
+}
+
+.title-text {
+  color: #fff;
+  font-size: calc(20 * var(--unit-pixel));
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.close-button {
+  position: absolute;
+  display: inline-block;
+  right: calc(23 * var(--unit-pixel));
+  top: calc(25 * var(--unit-pixel));
+  width: calc(28 * var(--unit-pixel));
+  height: calc(28 * var(--unit-pixel));
+}
+
+.test-box {
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+}
+
+table, tr, td, tbody {
+  border: solid 0px white;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  width: 90vw;
+  height: 90vw;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+}
+
+
+.card {
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  perspective: 100vw;
+  animation: backInUp; 
+  animation-duration: 1s; 
+}
+
+.card-inner {
+  /* position: absolute를 이용하여 카드 앞뒤를 곂쳐지게 함*/
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* 뒷면사진 */ 
+.card-front,
+.card-back { 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background: white;
+  background-color: transparent;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.js-timer{
+  display:flex;
+  justify-content: center;
+  font-size: calc(60 * var(--unit-pixel));
+  transition: all 1s;
+  color: white;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  font-family: 'Jua', sans-serif;
+}
+
+
+.element {
+  animation: zoomInDown; 
+  animation-duration: 1s; 
+}
+.Replay {
+  position: fixed;
+  top: calc(-700 * var(--unit-pixel));
+  width: 100vw;
+}
+
+.level-button {
+  position: relative;
+  left: 28vw;
+  top: 75vw;
+}
